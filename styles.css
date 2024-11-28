@@ -1,0 +1,204 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f1f1f1, #e0e0e0);
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #10668e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-links li a:hover {
+    color: #596be0;
+  }
+  
+  /* Home Section */
+  .home-section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60vh;
+    background: linear-gradient(135deg, #16aadf, #97b1bf);
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .home-section h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .home-section p {
+    font-size: 1.4em;
+    opacity: 0.9;
+  }
+  
+  .shop-now-btn {
+    background: #0b2d93;
+    color: white;
+    padding: 15px 50px;
+    text-decoration: none;
+    border-radius: 35px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-now-btn:hover {
+    background: #101daf;
+  }
+  
+  /* T-shirt Gallery Section */
+  /* T-shirt Gallery Section */
+.tshirt-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px; /* Reduced the gap between items */
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .tshirt {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    height: 380px; /* Fixed height for consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px; /* Added padding for better spacing */
+  }
+  
+  .tshirt:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tshirt img {
+    width: 100%;
+    height: 180px; /* Adjusted height for the image */
+    object-fit: contain; /* Ensures the entire image is visible without cropping */
+    border-radius: 10px;
+    margin-bottom: 15px; /* Adds spacing between the image and text */
+  }
+  
+  .tshirt h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .tshirt p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #888;
+  }
+  
+  
+  /* Buy Button */
+  .buy-button {
+    background: #1b636e;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(255, 111, 97, 0.3);
+    position: relative;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background: #7bb2cb;
+    transform: translateY(-5px);
+  }
+  
+  /* About Section */
+  .about-section {
+    background: linear-gradient(135deg, #95d0e5, #2f90c4);
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #e2eaed;
+    color: rgb(22, 6, 6);
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer a {
+    color: #140b08;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
